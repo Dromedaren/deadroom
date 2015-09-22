@@ -1,0 +1,6 @@
+<map id="Sprite" name="Sprite">
+<area shape="rect" id="node3" href="$classArrow.html" title="{Arrow\n||+ Arrow()\l+ Arrow()\l+ operator=()\l+ move()\l+ collision()\l+ blit()\l}" alt="" coords="5,538,101,710"/>
+<area shape="rect" id="node5" href="$classPlayer.html" title="{Player\n||+ Player()\l+ Player()\l+ operator=()\l+ ~Player()\l+ move()\l+ takeDamage()\l+ events()\l+ getHealth()\l+ attack()\l+ collision()\l+ getArrowSprite()\l+ getArrows()\l}" alt="" coords="125,486,253,762"/>
+<area shape="rect" id="node7" href="$classUi.html" title="{Ui\n||+ Ui()\l+ Ui()\l+ operator=()\l+ ~Ui()\l+ events()\l+ collision()\l+ getUIText()\l}" alt="" coords="277,529,376,719"/>
+<area shape="rect" id="node9" href="$classZombie.html" title="{Zombie\n||+ Zombie()\l+ Zombie()\l+ operator=()\l+ ~Zombie()\l+ attack()\l+ getHealth()\l+ move()\l+ events()\l+ takeDamage()\l+ randomSpawn()\l+ collision()\l}" alt="" coords="400,495,525,753"/>
+</map>

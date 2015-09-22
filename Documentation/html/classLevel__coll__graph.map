@@ -1,0 +1,8 @@
+<map id="Level" name="Level">
+<area shape="rect" id="node2" href="$classGame.html" title="{Game\n|+ screen\l+ gameEvent\l+ random_generator\l|+ Game()\l+ Game()\l+ operator=()\l+ ~Game()\l+ draw()\l+ run()\l+ runLevel()\l+ loadLevel()\l+ loadMenu()\l+ loadImage()\land 12 more...\l}" alt="" coords="72,675,211,968"/>
+<area shape="rect" id="node11" href="$classSprite.html" title="{Sprite\n|# direction\l# spriteName\l# facing\l# spritePosition\l# spriteSheetRect\l# animations\l# spriteSheet\l# SPRITE_SIZE\l|+ ~Sprite()\l+ events()\l+ move()\l+ boundries_collision()\l+ collision()\l+ getFacingDirection()\l+ getSpritePosition()\l+ getSpriteSheetRect()\l+ getSprite()\l+ getSpriteSize()\l# Sprite()\l# Sprite()\l# operator=()\l}" alt="" coords="59,1035,213,1450"/>
+<area shape="rect" id="node5" href="$classTimer.html" title="{Timer\n|+ startTicks\l|+ Timer()\l+ Start()\l+ Stop()\l+ Pause()\l+ Unpause()\l+ get_ticks()\l+ is_started()\l+ is_paused()\l}" alt="" coords="244,349,345,555"/>
+<area shape="rect" id="node7" href="$structLevel_1_1Difficulty.html" title="{Level::Difficulty\n|+ zombiesTotal\l+ waveSize\l+ playerDamage\l+ playerHealth\l+ playerSpeed\l+ zombieDamage\l+ zombieHealth\l+ zombieSpeed\l+ waveCooldown\l|}" alt="" coords="43,5,168,229"/>
+<area shape="rect" id="node9" href="$classUi.html" title="{Ui\n||+ Ui()\l+ Ui()\l+ operator=()\l+ ~Ui()\l+ events()\l+ collision()\l+ getUIText()\l}" alt="" coords="5,1545,104,1735"/>
+<area shape="rect" id="node14" href="$classPlayer.html" title="{Player\n||+ Player()\l+ Player()\l+ operator=()\l+ ~Player()\l+ move()\l+ takeDamage()\l+ events()\l+ getHealth()\l+ attack()\l+ collision()\l+ getArrowSprite()\l+ getArrows()\l}" alt="" coords="157,1502,285,1778"/>
+</map>

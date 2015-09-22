@@ -1,0 +1,3 @@
+<map id="Newlevel" name="Newlevel">
+<area shape="rect" id="node2" href="$classLevel.html" title="{Level\n|+ difficultysettings\l+ levelcount\l# game\l# player\l# ui\l# zombieSpriteSheet\l# zombies\l# levelBackground\l|+ Level()\l+ operator=()\l+ ~Level()\l+ blit()\l+ events()\l+ update()\l+ collision_detection()\l+ getVolume()\l+ getZombieSprite()\l+ getZombies()\l# Level()\l}" alt="" coords="5,6,155,386"/>
+</map>

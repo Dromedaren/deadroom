@@ -1,0 +1,115 @@
+\hypertarget{classUi}{\section{Ui Class Reference}
+\label{classUi}\index{Ui@{Ui}}
+}
+
+
+{\ttfamily \#include $<$U\-I.\-h$>$}
+
+
+
+Inheritance diagram for Ui\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classUi__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ui\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classUi__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUi_a55c1d53a31ec024b82ce901a3ea2e4d9}{Ui} (\hyperlink{classGame}{Game} $\ast$game, \hyperlink{classPlayer}{Player} $\ast$player)
+\item 
+\hyperlink{classUi_aa6c7ed33d913ad19c82b6bb7e010a92f}{Ui} (const \hyperlink{classUi}{Ui} \&)=delete
+\item 
+\hyperlink{classUi}{Ui} \& \hyperlink{classUi_a7adc143e966ada55593ebd0607e8255d}{operator=} (const \hyperlink{classUi}{Ui} \&)=delete
+\item 
+\hyperlink{classUi_a7a0333fdf87c857f3b780015ee8e3bd9}{$\sim$\-Ui} ()
+\item 
+void \hyperlink{classUi_ac9e709710a1c0f0ad61c3347026903fc}{events} ()
+\item 
+bool \hyperlink{classUi_ad1dd6e7fe4739c9a7f8c4d38e52b08ce}{collision} ()
+\item 
+S\-D\-L\-\_\-\-Surface $\ast$ \hyperlink{classUi_a89b63a847637f8ec9d6148d7367d5857}{get\-U\-I\-Text} () const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classUi_a55c1d53a31ec024b82ce901a3ea2e4d9}{\index{Ui@{Ui}!Ui@{Ui}}
+\index{Ui@{Ui}!Ui@{Ui}}
+\subsubsection[{Ui}]{\setlength{\rightskip}{0pt plus 5cm}Ui\-::\-Ui (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{{\bf Player} $\ast$}]{player}
+\end{DoxyParamCaption}
+)}}\label{classUi_a55c1d53a31ec024b82ce901a3ea2e4d9}
+the user interface draws the players health bar, the text on screen, it also opens the true type font system.\hypertarget{classUi_aa6c7ed33d913ad19c82b6bb7e010a92f}{\index{Ui@{Ui}!Ui@{Ui}}
+\index{Ui@{Ui}!Ui@{Ui}}
+\subsubsection[{Ui}]{\setlength{\rightskip}{0pt plus 5cm}Ui\-::\-Ui (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ui} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classUi_aa6c7ed33d913ad19c82b6bb7e010a92f}
+\hypertarget{classUi_a7a0333fdf87c857f3b780015ee8e3bd9}{\index{Ui@{Ui}!$\sim$\-Ui@{$\sim$\-Ui}}
+\index{$\sim$\-Ui@{$\sim$\-Ui}!Ui@{Ui}}
+\subsubsection[{$\sim$\-Ui}]{\setlength{\rightskip}{0pt plus 5cm}Ui\-::$\sim$\-Ui (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classUi_a7a0333fdf87c857f3b780015ee8e3bd9}
+the destructor is resposible for freeing the surfaces and closing the true type font system.
+
+\subsection{Member Function Documentation}
+\hypertarget{classUi_ad1dd6e7fe4739c9a7f8c4d38e52b08ce}{\index{Ui@{Ui}!collision@{collision}}
+\index{collision@{collision}!Ui@{Ui}}
+\subsubsection[{collision}]{\setlength{\rightskip}{0pt plus 5cm}bool Ui\-::collision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classUi_ad1dd6e7fe4739c9a7f8c4d38e52b08ce}
+
+
+Implements \hyperlink{classSprite_ae0c21af6a4fc7fb8e9daf72675a1ec50}{Sprite}.
+
+\hypertarget{classUi_ac9e709710a1c0f0ad61c3347026903fc}{\index{Ui@{Ui}!events@{events}}
+\index{events@{events}!Ui@{Ui}}
+\subsubsection[{events}]{\setlength{\rightskip}{0pt plus 5cm}void Ui\-::events (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classUi_ac9e709710a1c0f0ad61c3347026903fc}
+we have to call on the user interface event function to update the player health bar.
+
+Reimplemented from \hyperlink{classSprite_a82cd02f494fe948457a8feb5ecd93212}{Sprite}.
+
+\hypertarget{classUi_a89b63a847637f8ec9d6148d7367d5857}{\index{Ui@{Ui}!get\-U\-I\-Text@{get\-U\-I\-Text}}
+\index{get\-U\-I\-Text@{get\-U\-I\-Text}!Ui@{Ui}}
+\subsubsection[{get\-U\-I\-Text}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Surface $\ast$ Ui\-::get\-U\-I\-Text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classUi_a89b63a847637f8ec9d6148d7367d5857}
+returns the surface that holds the player health text message.\hypertarget{classUi_a7adc143e966ada55593ebd0607e8255d}{\index{Ui@{Ui}!operator=@{operator=}}
+\index{operator=@{operator=}!Ui@{Ui}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ui}\& Ui\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ui} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classUi_a7adc143e966ada55593ebd0607e8255d}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{UI_8h}{U\-I.\-h}\item 
+\hyperlink{UI_8cc}{U\-I.\-cc}\item 
+\hyperlink{UI_8cpp}{U\-I.\-cpp}\end{DoxyCompactItemize}

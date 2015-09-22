@@ -1,0 +1,248 @@
+\hypertarget{classSprite}{\section{Sprite Class Reference}
+\label{classSprite}\index{Sprite@{Sprite}}
+}
+
+
+{\ttfamily \#include $<$sprite.\-h$>$}
+
+
+
+Inheritance diagram for Sprite\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSprite__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sprite\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classSprite__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classSprite_a8accab430f9d90ae5117b57d67e32b84}{$\sim$\-Sprite} ()
+\item 
+virtual void \hyperlink{classSprite_a82cd02f494fe948457a8feb5ecd93212}{events} ()
+\item 
+virtual void \hyperlink{classSprite_afcf196c3d93fd743fdcc6f84d128ece6}{move} ()
+\item 
+virtual bool \hyperlink{classSprite_a82752d76482fb36ac5d3a22d86a50251}{boundries\-\_\-collision} ()
+\item 
+virtual bool \hyperlink{classSprite_ae0c21af6a4fc7fb8e9daf72675a1ec50}{collision} ()=0
+\item 
+std\-::string \hyperlink{classSprite_a5c3b19e7e0c8d831082c72a0b1aecd05}{get\-Facing\-Direction} () const 
+\item 
+S\-D\-L\-\_\-\-Rect \& \hyperlink{classSprite_a9009a87de777c6b9e0878b42716f159e}{get\-Sprite\-Position} ()
+\item 
+S\-D\-L\-\_\-\-Rect $\ast$ \hyperlink{classSprite_aa000074f1bd6ee67be85397d9b58e24d}{get\-Sprite\-Sheet\-Rect} ()
+\item 
+S\-D\-L\-\_\-\-Surface $\ast$ \hyperlink{classSprite_a8f1f384e8564dbd0ad18c75e782abb0f}{get\-Sprite} () const 
+\item 
+int \hyperlink{classSprite_abd54a55219e28b8865ee2ee177bc2811}{get\-Sprite\-Size} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSprite_a569ab75b5c75faa42c6ec2cfc14886ab}{Sprite} (\hyperlink{classGame}{Game} $\ast$\hyperlink{classSprite_a72c2faa2522184ea3cd81a1d50168a34}{game}, std\-::string name, S\-D\-L\-\_\-\-Surface $\ast$sprite\-Image=nullptr)
+\item 
+\hyperlink{classSprite_ab216809ce70a929c1e4407ce39b57547}{Sprite} (const \hyperlink{classSprite}{Sprite} \&)=delete
+\item 
+\hyperlink{classSprite}{Sprite} \& \hyperlink{classSprite_ab608eb8af8a6d50d3fd784170102cbc6}{operator=} (const \hyperlink{classSprite}{Sprite} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGame}{Game} $\ast$ \hyperlink{classSprite_a72c2faa2522184ea3cd81a1d50168a34}{game}
+\item 
+std\-::map$<$ std\-::string, int $>$ \hyperlink{classSprite_a660cef010618bdc48d706e0b3ab87177}{direction} \{\}
+\item 
+std\-::string \hyperlink{classSprite_a851a41894b0bbcb60a437fe82940fed9}{sprite\-Name} \{\}
+\item 
+std\-::string \hyperlink{classSprite_a582745bcb30f1910d056bf2ab5237e5b}{facing} \{\}
+\item 
+S\-D\-L\-\_\-\-Rect \hyperlink{classSprite_a2af2790211c2a3deb4a830741b0f8876}{sprite\-Position}
+\item 
+S\-D\-L\-\_\-\-Rect \hyperlink{classSprite_aac23050a3e3383f85f3cabbb874ff890}{sprite\-Sheet\-Rect}
+\item 
+\hyperlink{sprite_8h_a4e660753b3d87694743ccaf2bbc9150a}{animation\-Table} const \hyperlink{classSprite_aba52ded16f7623eb5f2ee63ece6ab896}{animations}
+\item 
+S\-D\-L\-\_\-\-Surface $\ast$ \hyperlink{classSprite_aa356e52e44c86d8d76cc3060eb41ae06}{sprite\-Sheet}
+\item 
+int \hyperlink{classSprite_a5dcf6606ddb6f6e8f85ad7d31536cc46}{S\-P\-R\-I\-T\-E\-\_\-\-S\-I\-Z\-E} \{0\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSprite_a8accab430f9d90ae5117b57d67e32b84}{\index{Sprite@{Sprite}!$\sim$\-Sprite@{$\sim$\-Sprite}}
+\index{$\sim$\-Sprite@{$\sim$\-Sprite}!Sprite@{Sprite}}
+\subsubsection[{$\sim$\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}Sprite\-::$\sim$\-Sprite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSprite_a8accab430f9d90ae5117b57d67e32b84}
+\hypertarget{classSprite_a569ab75b5c75faa42c6ec2cfc14886ab}{\index{Sprite@{Sprite}!Sprite@{Sprite}}
+\index{Sprite@{Sprite}!Sprite@{Sprite}}
+\subsubsection[{Sprite}]{\setlength{\rightskip}{0pt plus 5cm}Sprite\-::\-Sprite (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{std\-::string}]{name, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{sprite\-Image = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSprite_a569ab75b5c75faa42c6ec2cfc14886ab}
+the sprite constructor sets all nessecary pointers internally, gets the sprite name creates a map holding the directions that a sprite can move, including its corresponding value that is later used to calculate and update sprite positions.\hypertarget{classSprite_ab216809ce70a929c1e4407ce39b57547}{\index{Sprite@{Sprite}!Sprite@{Sprite}}
+\index{Sprite@{Sprite}!Sprite@{Sprite}}
+\subsubsection[{Sprite}]{\setlength{\rightskip}{0pt plus 5cm}Sprite\-::\-Sprite (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sprite} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}}\label{classSprite_ab216809ce70a929c1e4407ce39b57547}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSprite_a82752d76482fb36ac5d3a22d86a50251}{\index{Sprite@{Sprite}!boundries\-\_\-collision@{boundries\-\_\-collision}}
+\index{boundries\-\_\-collision@{boundries\-\_\-collision}!Sprite@{Sprite}}
+\subsubsection[{boundries\-\_\-collision}]{\setlength{\rightskip}{0pt plus 5cm}bool Sprite\-::boundries\-\_\-collision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSprite_a82752d76482fb36ac5d3a22d86a50251}
+this is a virtual function handling the boundry collisions for all types of sprites.\hypertarget{classSprite_ae0c21af6a4fc7fb8e9daf72675a1ec50}{\index{Sprite@{Sprite}!collision@{collision}}
+\index{collision@{collision}!Sprite@{Sprite}}
+\subsubsection[{collision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Sprite\-::collision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSprite_ae0c21af6a4fc7fb8e9daf72675a1ec50}
+
+
+Implemented in \hyperlink{classZombie_a41b274a28ed94dddb23794e6f6cc81f1}{Zombie}, \hyperlink{classPlayer_a740c5163bb90b6b5824aed4817b0c2cc}{Player}, \hyperlink{classUi_ad1dd6e7fe4739c9a7f8c4d38e52b08ce}{Ui}, and \hyperlink{classArrow_aab2752bc7867eb7595a959189e0eb667}{Arrow}.
+
+\hypertarget{classSprite_a82cd02f494fe948457a8feb5ecd93212}{\index{Sprite@{Sprite}!events@{events}}
+\index{events@{events}!Sprite@{Sprite}}
+\subsubsection[{events}]{\setlength{\rightskip}{0pt plus 5cm}void Sprite\-::events (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSprite_a82cd02f494fe948457a8feb5ecd93212}
+
+
+Reimplemented in \hyperlink{classZombie_af9f6fdd900c769f17d0e2dccb0db33c3}{Zombie}, \hyperlink{classPlayer_a9df270c5655b433d057e3e0f8fafd9ae}{Player}, and \hyperlink{classUi_ac9e709710a1c0f0ad61c3347026903fc}{Ui}.
+
+\hypertarget{classSprite_a5c3b19e7e0c8d831082c72a0b1aecd05}{\index{Sprite@{Sprite}!get\-Facing\-Direction@{get\-Facing\-Direction}}
+\index{get\-Facing\-Direction@{get\-Facing\-Direction}!Sprite@{Sprite}}
+\subsubsection[{get\-Facing\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Sprite\-::get\-Facing\-Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classSprite_a5c3b19e7e0c8d831082c72a0b1aecd05}
+returns the direction a sprite is currently facing.\hypertarget{classSprite_a8f1f384e8564dbd0ad18c75e782abb0f}{\index{Sprite@{Sprite}!get\-Sprite@{get\-Sprite}}
+\index{get\-Sprite@{get\-Sprite}!Sprite@{Sprite}}
+\subsubsection[{get\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Surface $\ast$ Sprite\-::get\-Sprite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classSprite_a8f1f384e8564dbd0ad18c75e782abb0f}
+returns the surface that holds the sprite.\hypertarget{classSprite_a9009a87de777c6b9e0878b42716f159e}{\index{Sprite@{Sprite}!get\-Sprite\-Position@{get\-Sprite\-Position}}
+\index{get\-Sprite\-Position@{get\-Sprite\-Position}!Sprite@{Sprite}}
+\subsubsection[{get\-Sprite\-Position}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Rect \& Sprite\-::get\-Sprite\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSprite_a9009a87de777c6b9e0878b42716f159e}
+returns a sprites current position on the level.\hypertarget{classSprite_aa000074f1bd6ee67be85397d9b58e24d}{\index{Sprite@{Sprite}!get\-Sprite\-Sheet\-Rect@{get\-Sprite\-Sheet\-Rect}}
+\index{get\-Sprite\-Sheet\-Rect@{get\-Sprite\-Sheet\-Rect}!Sprite@{Sprite}}
+\subsubsection[{get\-Sprite\-Sheet\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Rect $\ast$ Sprite\-::get\-Sprite\-Sheet\-Rect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSprite_aa000074f1bd6ee67be85397d9b58e24d}
+returns where in the sprite sheet the current animation is at.\hypertarget{classSprite_abd54a55219e28b8865ee2ee177bc2811}{\index{Sprite@{Sprite}!get\-Sprite\-Size@{get\-Sprite\-Size}}
+\index{get\-Sprite\-Size@{get\-Sprite\-Size}!Sprite@{Sprite}}
+\subsubsection[{get\-Sprite\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Sprite\-::get\-Sprite\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classSprite_abd54a55219e28b8865ee2ee177bc2811}
+returns the size of the sprite.\hypertarget{classSprite_afcf196c3d93fd743fdcc6f84d128ece6}{\index{Sprite@{Sprite}!move@{move}}
+\index{move@{move}!Sprite@{Sprite}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Sprite\-::move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSprite_afcf196c3d93fd743fdcc6f84d128ece6}
+
+
+Reimplemented in \hyperlink{classZombie_adc60ee88311d12f8fe150f5917943d2b}{Zombie}, \hyperlink{classPlayer_ae02ee46d8c20dd0697b975f935b09839}{Player}, and \hyperlink{classArrow_aab8bcf5d8e523c6d992c96af645dd30a}{Arrow}.
+
+\hypertarget{classSprite_ab608eb8af8a6d50d3fd784170102cbc6}{\index{Sprite@{Sprite}!operator=@{operator=}}
+\index{operator=@{operator=}!Sprite@{Sprite}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sprite}\& Sprite\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sprite} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}}\label{classSprite_ab608eb8af8a6d50d3fd784170102cbc6}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSprite_aba52ded16f7623eb5f2ee63ece6ab896}{\index{Sprite@{Sprite}!animations@{animations}}
+\index{animations@{animations}!Sprite@{Sprite}}
+\subsubsection[{animations}]{\setlength{\rightskip}{0pt plus 5cm}{\bf animation\-Table} const Sprite\-::animations\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSprite_aba52ded16f7623eb5f2ee63ece6ab896}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+        \{
+                    \{\textcolor{stringliteral}{"upAnimation1"}, std::make\_pair(0, 0)\},
+                    \{\textcolor{stringliteral}{"upAnimation2"}, std::make\_pair(25, 0)\},
+                    \{\textcolor{stringliteral}{"rightAnimation1"}, std::make\_pair(50, 0)\},
+                    \{\textcolor{stringliteral}{"rightAnimation2"}, std::make\_pair(75, 0)\},
+                    \{\textcolor{stringliteral}{"downAnimation1"}, std::make\_pair(100, 0)\},
+                    \{\textcolor{stringliteral}{"downAnimation2"}, std::make\_pair(125, 0)\},
+                    \{\textcolor{stringliteral}{"leftAnimation1"}, std::make\_pair(150, 0)\},
+                    \{\textcolor{stringliteral}{"leftAnimation2"}, std::make\_pair(175, 0)\},
+                    \{\textcolor{stringliteral}{"upArrowAnimation"}, std::make\_pair(0, 0)\},
+                    \{\textcolor{stringliteral}{"rightArrowAnimation"}, std::make\_pair(10, 0)\},
+                    \{\textcolor{stringliteral}{"downArrowAnimation"}, std::make\_pair(20, 0)\},
+                    \{\textcolor{stringliteral}{"leftArrowAnimation"}, std::make\_pair(30, 0)\},
+                    \{\textcolor{stringliteral}{"lowHealthAnimation"}, std::make\_pair(0, 0)\},
+                    \{\textcolor{stringliteral}{"mediumHealthAnimation"}, std::make\_pair(56, 0)\},
+                    \{\textcolor{stringliteral}{"almostfullHealthAnimation"}, std::make\_pair(112, 0)\},
+                    \{\textcolor{stringliteral}{"fullHealthAnimation"}, std::make\_pair(168, 0)\}
+        \}
+\end{DoxyCode}
+\hypertarget{classSprite_a660cef010618bdc48d706e0b3ab87177}{\index{Sprite@{Sprite}!direction@{direction}}
+\index{direction@{direction}!Sprite@{Sprite}}
+\subsubsection[{direction}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$std\-::string, int$>$ Sprite\-::direction \{\}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSprite_a660cef010618bdc48d706e0b3ab87177}
+\hypertarget{classSprite_a582745bcb30f1910d056bf2ab5237e5b}{\index{Sprite@{Sprite}!facing@{facing}}
+\index{facing@{facing}!Sprite@{Sprite}}
+\subsubsection[{facing}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Sprite\-::facing \{\}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSprite_a582745bcb30f1910d056bf2ab5237e5b}
+\hypertarget{classSprite_a72c2faa2522184ea3cd81a1d50168a34}{\index{Sprite@{Sprite}!game@{game}}
+\index{game@{game}!Sprite@{Sprite}}
+\subsubsection[{game}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game}$\ast$ Sprite\-::game\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSprite_a72c2faa2522184ea3cd81a1d50168a34}
+\hypertarget{classSprite_a5dcf6606ddb6f6e8f85ad7d31536cc46}{\index{Sprite@{Sprite}!S\-P\-R\-I\-T\-E\-\_\-\-S\-I\-Z\-E@{S\-P\-R\-I\-T\-E\-\_\-\-S\-I\-Z\-E}}
+\index{S\-P\-R\-I\-T\-E\-\_\-\-S\-I\-Z\-E@{S\-P\-R\-I\-T\-E\-\_\-\-S\-I\-Z\-E}!Sprite@{Sprite}}
+\subsubsection[{S\-P\-R\-I\-T\-E\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}int Sprite\-::\-S\-P\-R\-I\-T\-E\-\_\-\-S\-I\-Z\-E \{0\}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSprite_a5dcf6606ddb6f6e8f85ad7d31536cc46}
+\hypertarget{classSprite_a851a41894b0bbcb60a437fe82940fed9}{\index{Sprite@{Sprite}!sprite\-Name@{sprite\-Name}}
+\index{sprite\-Name@{sprite\-Name}!Sprite@{Sprite}}
+\subsubsection[{sprite\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Sprite\-::sprite\-Name \{\}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSprite_a851a41894b0bbcb60a437fe82940fed9}
+\hypertarget{classSprite_a2af2790211c2a3deb4a830741b0f8876}{\index{Sprite@{Sprite}!sprite\-Position@{sprite\-Position}}
+\index{sprite\-Position@{sprite\-Position}!Sprite@{Sprite}}
+\subsubsection[{sprite\-Position}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Rect Sprite\-::sprite\-Position\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSprite_a2af2790211c2a3deb4a830741b0f8876}
+\hypertarget{classSprite_aa356e52e44c86d8d76cc3060eb41ae06}{\index{Sprite@{Sprite}!sprite\-Sheet@{sprite\-Sheet}}
+\index{sprite\-Sheet@{sprite\-Sheet}!Sprite@{Sprite}}
+\subsubsection[{sprite\-Sheet}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Surface$\ast$ Sprite\-::sprite\-Sheet\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSprite_aa356e52e44c86d8d76cc3060eb41ae06}
+\hypertarget{classSprite_aac23050a3e3383f85f3cabbb874ff890}{\index{Sprite@{Sprite}!sprite\-Sheet\-Rect@{sprite\-Sheet\-Rect}}
+\index{sprite\-Sheet\-Rect@{sprite\-Sheet\-Rect}!Sprite@{Sprite}}
+\subsubsection[{sprite\-Sheet\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Rect Sprite\-::sprite\-Sheet\-Rect\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSprite_aac23050a3e3383f85f3cabbb874ff890}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{sprite_8h}{sprite.\-h}\item 
+\hyperlink{sprite_8cc}{sprite.\-cc}\end{DoxyCompactItemize}

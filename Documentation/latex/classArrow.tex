@@ -1,0 +1,108 @@
+\hypertarget{classArrow}{\section{Arrow Class Reference}
+\label{classArrow}\index{Arrow@{Arrow}}
+}
+
+
+{\ttfamily \#include $<$arrow.\-h$>$}
+
+
+
+Inheritance diagram for Arrow\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classArrow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Arrow\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classArrow__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classArrow_ae134c1249c785d8921886c355bac8972}{Arrow} (\hyperlink{classGame}{Game} $\ast$game\-Pointer, \hyperlink{classPlayer}{Player} $\ast$player, \hyperlink{classLevel}{Level} $\ast$level, std\-::string facing\-\_\-direction, S\-D\-L\-\_\-\-Rect player\-Position)
+\item 
+\hyperlink{classArrow_a3eacdef1aee0243a65d738f9723916f8}{Arrow} (const \hyperlink{classArrow}{Arrow} \&)=delete
+\item 
+\hyperlink{classArrow}{Arrow} \& \hyperlink{classArrow_a764fe70858bda2a51d61316bac67397d}{operator=} (const \hyperlink{classArrow}{Arrow} \&)=delete
+\item 
+void \hyperlink{classArrow_aab8bcf5d8e523c6d992c96af645dd30a}{move} ()
+\item 
+bool \hyperlink{classArrow_aab2752bc7867eb7595a959189e0eb667}{collision} ()
+\item 
+void \hyperlink{classArrow_afdc36c090185454d3630a4248e3f9e62}{blit} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classArrow_ae134c1249c785d8921886c355bac8972}{\index{Arrow@{Arrow}!Arrow@{Arrow}}
+\index{Arrow@{Arrow}!Arrow@{Arrow}}
+\subsubsection[{Arrow}]{\setlength{\rightskip}{0pt plus 5cm}Arrow\-::\-Arrow (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game\-Pointer, }
+\item[{{\bf Player} $\ast$}]{player, }
+\item[{{\bf Level} $\ast$}]{level, }
+\item[{std\-::string}]{facing\-\_\-direction, }
+\item[{S\-D\-L\-\_\-\-Rect}]{player\-Position}
+\end{DoxyParamCaption}
+)}}\label{classArrow_ae134c1249c785d8921886c355bac8972}
+arrow constructor contains settings for the arrows speed, size, sprite sheet positions and which direction it is facing when fired.\hypertarget{classArrow_a3eacdef1aee0243a65d738f9723916f8}{\index{Arrow@{Arrow}!Arrow@{Arrow}}
+\index{Arrow@{Arrow}!Arrow@{Arrow}}
+\subsubsection[{Arrow}]{\setlength{\rightskip}{0pt plus 5cm}Arrow\-::\-Arrow (
+\begin{DoxyParamCaption}
+\item[{const {\bf Arrow} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classArrow_a3eacdef1aee0243a65d738f9723916f8}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classArrow_afdc36c090185454d3630a4248e3f9e62}{\index{Arrow@{Arrow}!blit@{blit}}
+\index{blit@{blit}!Arrow@{Arrow}}
+\subsubsection[{blit}]{\setlength{\rightskip}{0pt plus 5cm}void Arrow\-::blit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classArrow_afdc36c090185454d3630a4248e3f9e62}
+\hypertarget{classArrow_aab2752bc7867eb7595a959189e0eb667}{\index{Arrow@{Arrow}!collision@{collision}}
+\index{collision@{collision}!Arrow@{Arrow}}
+\subsubsection[{collision}]{\setlength{\rightskip}{0pt plus 5cm}bool Arrow\-::collision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classArrow_aab2752bc7867eb7595a959189e0eb667}
+iterate through all zombies on the level and check if the arrow collided with any of them, if so then do dammage on these foes!
+
+Implements \hyperlink{classSprite_ae0c21af6a4fc7fb8e9daf72675a1ec50}{Sprite}.
+
+\hypertarget{classArrow_aab8bcf5d8e523c6d992c96af645dd30a}{\index{Arrow@{Arrow}!move@{move}}
+\index{move@{move}!Arrow@{Arrow}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Arrow\-::move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classArrow_aab8bcf5d8e523c6d992c96af645dd30a}
+move uses the arrows direction to calculate in which direction to move.
+
+Reimplemented from \hyperlink{classSprite_afcf196c3d93fd743fdcc6f84d128ece6}{Sprite}.
+
+\hypertarget{classArrow_a764fe70858bda2a51d61316bac67397d}{\index{Arrow@{Arrow}!operator=@{operator=}}
+\index{operator=@{operator=}!Arrow@{Arrow}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Arrow}\& Arrow\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Arrow} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classArrow_a764fe70858bda2a51d61316bac67397d}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{arrow_8h}{arrow.\-h}\item 
+\hyperlink{arrow_8cc}{arrow.\-cc}\end{DoxyCompactItemize}

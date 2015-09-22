@@ -1,0 +1,300 @@
+\hypertarget{classGame}{\section{Game Class Reference}
+\label{classGame}\index{Game@{Game}}
+}
+
+
+{\ttfamily \#include $<$game.\-h$>$}
+
+
+
+Collaboration diagram for Game\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGame__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classGame_a0edcb9debef447b9d0877c8b1d139f24}{States} \{ \\*
+\hyperlink{classGame_a0edcb9debef447b9d0877c8b1d139f24a66e2ac0cdacbf1a02a26825feff2ff57}{E\-X\-I\-T}, 
+\hyperlink{classGame_a0edcb9debef447b9d0877c8b1d139f24a27b5e3ff6ff653679f76c97fa644b5b4}{M\-E\-N\-U}, 
+\hyperlink{classGame_a0edcb9debef447b9d0877c8b1d139f24acf1196c4592cd5e711afe67fa7729699}{P\-L\-A\-Y}, 
+\hyperlink{classGame_a0edcb9debef447b9d0877c8b1d139f24a36dbe004786a70a1325e4e345bb02864}{C\-O\-M\-P\-L\-E\-T\-E\-L\-E\-V\-E\-L}, 
+\\*
+\hyperlink{classGame_a0edcb9debef447b9d0877c8b1d139f24a08d9474d3579084de97a5496d559d1ec}{G\-A\-M\-E\-O\-V\-E\-R}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game} ()
+\item 
+\hyperlink{classGame_abb28875d74d25fa9e0dcdbe37c6ad89c}{Game} (const \hyperlink{classGame}{Game} \&)=delete
+\item 
+\hyperlink{classGame}{Game} \& \hyperlink{classGame_a4d0c0503733cc50b0b5cb8d7ef1237ec}{operator=} (const \hyperlink{classGame}{Game} \&)=delete
+\item 
+\hyperlink{classGame_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\-Game} ()
+\item 
+void \hyperlink{classGame_a6d54497ce3a66f6dd45eacfdccc8d0bd}{draw} ()
+\item 
+void \hyperlink{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}{run} ()
+\item 
+void \hyperlink{classGame_a8d5df01e8f891aa5bb01153a66692dd6}{run\-Level} ()
+\item 
+void \hyperlink{classGame_a9713f011d2d0d3ef4a37aa07d7951947}{load\-Level} ()
+\item 
+void \hyperlink{classGame_a69c0505b09d39a511eb9c7d44a8cd46e}{load\-Menu} ()
+\item 
+S\-D\-L\-\_\-\-Surface $\ast$ \hyperlink{classGame_a007a16399b4c563e1a41e1060a7e2db7}{load\-Image} (std\-::string filename)
+\item 
+void \hyperlink{classGame_a95c19db69b73a56245e41ce9fd639b31}{apply\-Image} (int x, int y, S\-D\-L\-\_\-\-Surface $\ast$source, S\-D\-L\-\_\-\-Surface $\ast$destination, S\-D\-L\-\_\-\-Rect $\ast$sprite\-Clip=N\-U\-L\-L)
+\item 
+void \hyperlink{classGame_abac16174982079a0c46f0626ada16d54}{play\-Music} (Mix\-\_\-\-Music $\ast$song) const 
+\item 
+void \hyperlink{classGame_abe33184093d0ae79d40e5ac3521febbb}{play\-Chunk} (Mix\-\_\-\-Chunk $\ast$effect) const 
+\item 
+Mix\-\_\-\-Music $\ast$ \hyperlink{classGame_a3b0626d1e61c88b1630cd7fd1f9371a9}{load\-Music} (std\-::string filename)
+\item 
+Mix\-\_\-\-Chunk $\ast$ \hyperlink{classGame_ac5ca4ad10b022c71b07622898c0e17b8}{load\-Chunk} (std\-::string filename)
+\item 
+void \hyperlink{classGame_aed11a603c8dd060fc5de09e74669a0df}{set\-Game\-State} (int new\-Game\-State)
+\item 
+int \hyperlink{classGame_a836331c7add267626662c9d4dee5928c}{get\-Game\-State} () const 
+\item 
+Uint8 $\ast$ \hyperlink{classGame_a165fa0a71221cd8b26623019f26a924f}{get\-Keystates} () const 
+\item 
+int \hyperlink{classGame_a2e00c62380b0d3940036e2edab06c2f2}{get\-Screen\-Width} () const 
+\item 
+int \hyperlink{classGame_a8c7902edc8a3c705fd8bb36847e06b54}{get\-Screen\-Height} () const 
+\item 
+int \hyperlink{classGame_a040876e97ce91301114c2009323ce8aa}{get\-Frames\-Per\-Second} () const 
+\item 
+void \hyperlink{classGame_a19d3feebe0343f98e4ccd652adc9db4a}{S\-D\-L\-\_\-\-E\-V\-E\-N\-T\-S} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTimer}{Timer} $\ast$ \hyperlink{classGame_a52e8281c6c4ca4a6398e23f0a5d90cce}{fps} \{nullptr\}
+\item 
+\hyperlink{classLevel}{Level} $\ast$ \hyperlink{classGame_a80f3380b4378e8969e230242c56a3361}{level} \{nullptr\}
+\item 
+S\-D\-L\-\_\-\-Surface $\ast$ \hyperlink{classGame_acc0f346d45bb53307b52acc9cc65912d}{screen} \{nullptr\}
+\item 
+S\-D\-L\-\_\-\-Event \hyperlink{classGame_afa62aac0abc3640293e298eec51b85d8}{game\-Event} \{\}
+\item 
+std\-::default\-\_\-random\-\_\-engine \hyperlink{classGame_a239c35e9816b7571609c870d6070fb4b}{random\-\_\-generator} \{seed\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classGame_a0edcb9debef447b9d0877c8b1d139f24}{\index{Game@{Game}!States@{States}}
+\index{States@{States}!Game@{Game}}
+\subsubsection[{States}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Game\-::\-States}}}\label{classGame_a0edcb9debef447b9d0877c8b1d139f24}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\-X\-I\-T@{E\-X\-I\-T}!Game@{Game}}\index{Game@{Game}!E\-X\-I\-T@{E\-X\-I\-T}}\item[{\em 
+\hypertarget{classGame_a0edcb9debef447b9d0877c8b1d139f24a66e2ac0cdacbf1a02a26825feff2ff57}{E\-X\-I\-T}\label{classGame_a0edcb9debef447b9d0877c8b1d139f24a66e2ac0cdacbf1a02a26825feff2ff57}
+}]\index{M\-E\-N\-U@{M\-E\-N\-U}!Game@{Game}}\index{Game@{Game}!M\-E\-N\-U@{M\-E\-N\-U}}\item[{\em 
+\hypertarget{classGame_a0edcb9debef447b9d0877c8b1d139f24a27b5e3ff6ff653679f76c97fa644b5b4}{M\-E\-N\-U}\label{classGame_a0edcb9debef447b9d0877c8b1d139f24a27b5e3ff6ff653679f76c97fa644b5b4}
+}]\index{P\-L\-A\-Y@{P\-L\-A\-Y}!Game@{Game}}\index{Game@{Game}!P\-L\-A\-Y@{P\-L\-A\-Y}}\item[{\em 
+\hypertarget{classGame_a0edcb9debef447b9d0877c8b1d139f24acf1196c4592cd5e711afe67fa7729699}{P\-L\-A\-Y}\label{classGame_a0edcb9debef447b9d0877c8b1d139f24acf1196c4592cd5e711afe67fa7729699}
+}]\index{C\-O\-M\-P\-L\-E\-T\-E\-L\-E\-V\-E\-L@{C\-O\-M\-P\-L\-E\-T\-E\-L\-E\-V\-E\-L}!Game@{Game}}\index{Game@{Game}!C\-O\-M\-P\-L\-E\-T\-E\-L\-E\-V\-E\-L@{C\-O\-M\-P\-L\-E\-T\-E\-L\-E\-V\-E\-L}}\item[{\em 
+\hypertarget{classGame_a0edcb9debef447b9d0877c8b1d139f24a36dbe004786a70a1325e4e345bb02864}{C\-O\-M\-P\-L\-E\-T\-E\-L\-E\-V\-E\-L}\label{classGame_a0edcb9debef447b9d0877c8b1d139f24a36dbe004786a70a1325e4e345bb02864}
+}]\index{G\-A\-M\-E\-O\-V\-E\-R@{G\-A\-M\-E\-O\-V\-E\-R}!Game@{Game}}\index{Game@{Game}!G\-A\-M\-E\-O\-V\-E\-R@{G\-A\-M\-E\-O\-V\-E\-R}}\item[{\em 
+\hypertarget{classGame_a0edcb9debef447b9d0877c8b1d139f24a08d9474d3579084de97a5496d559d1ec}{G\-A\-M\-E\-O\-V\-E\-R}\label{classGame_a0edcb9debef447b9d0877c8b1d139f24a08d9474d3579084de97a5496d559d1ec}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGame_ad59df6562a58a614fda24622d3715b65}{\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\subsubsection[{Game}]{\setlength{\rightskip}{0pt plus 5cm}Game\-::\-Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGame_ad59df6562a58a614fda24622d3715b65}
+The game constructor Initializes S\-D\-L Video \& Audio, the audio mixer, and true type font system.\hypertarget{classGame_abb28875d74d25fa9e0dcdbe37c6ad89c}{\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\subsubsection[{Game}]{\setlength{\rightskip}{0pt plus 5cm}Game\-::\-Game (
+\begin{DoxyParamCaption}
+\item[{const {\bf Game} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classGame_abb28875d74d25fa9e0dcdbe37c6ad89c}
+\hypertarget{classGame_ae3d112ca6e0e55150d2fdbc704474530}{\index{Game@{Game}!$\sim$\-Game@{$\sim$\-Game}}
+\index{$\sim$\-Game@{$\sim$\-Game}!Game@{Game}}
+\subsubsection[{$\sim$\-Game}]{\setlength{\rightskip}{0pt plus 5cm}Game\-::$\sim$\-Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGame_ae3d112ca6e0e55150d2fdbc704474530}
+\hyperlink{classGame}{Game} destructor makes sure to free surfaces and pointers before shutting down the Mixer, T\-T\-F system and S\-D\-L
+
+\subsection{Member Function Documentation}
+\hypertarget{classGame_a95c19db69b73a56245e41ce9fd639b31}{\index{Game@{Game}!apply\-Image@{apply\-Image}}
+\index{apply\-Image@{apply\-Image}!Game@{Game}}
+\subsubsection[{apply\-Image}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::apply\-Image (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{source, }
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{destination, }
+\item[{S\-D\-L\-\_\-\-Rect $\ast$}]{sprite\-Clip = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classGame_a95c19db69b73a56245e41ce9fd639b31}
+this is the actual drawing function the function creates a temporary rectangle offset and used that to blit the surface onto the destination surface.\hypertarget{classGame_a6d54497ce3a66f6dd45eacfdccc8d0bd}{\index{Game@{Game}!draw@{draw}}
+\index{draw@{draw}!Game@{Game}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGame_a6d54497ce3a66f6dd45eacfdccc8d0bd}
+Flips the back buffer and draws what is in memory to the screen surface.\hypertarget{classGame_a040876e97ce91301114c2009323ce8aa}{\index{Game@{Game}!get\-Frames\-Per\-Second@{get\-Frames\-Per\-Second}}
+\index{get\-Frames\-Per\-Second@{get\-Frames\-Per\-Second}!Game@{Game}}
+\subsubsection[{get\-Frames\-Per\-Second}]{\setlength{\rightskip}{0pt plus 5cm}int Game\-::get\-Frames\-Per\-Second (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classGame_a040876e97ce91301114c2009323ce8aa}
+Returns frames per second.\hypertarget{classGame_a836331c7add267626662c9d4dee5928c}{\index{Game@{Game}!get\-Game\-State@{get\-Game\-State}}
+\index{get\-Game\-State@{get\-Game\-State}!Game@{Game}}
+\subsubsection[{get\-Game\-State}]{\setlength{\rightskip}{0pt plus 5cm}int Game\-::get\-Game\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classGame_a836331c7add267626662c9d4dee5928c}
+Get\-Game\-State simply returns the current state the game is in.\hypertarget{classGame_a165fa0a71221cd8b26623019f26a924f}{\index{Game@{Game}!get\-Keystates@{get\-Keystates}}
+\index{get\-Keystates@{get\-Keystates}!Game@{Game}}
+\subsubsection[{get\-Keystates}]{\setlength{\rightskip}{0pt plus 5cm}Uint8 $\ast$ Game\-::get\-Keystates (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classGame_a165fa0a71221cd8b26623019f26a924f}
+Get\-Keystates returns a pointer holding all keystates. this is a pointer to an array of keys. It is used to determine if a key is pressed or not.\hypertarget{classGame_a8c7902edc8a3c705fd8bb36847e06b54}{\index{Game@{Game}!get\-Screen\-Height@{get\-Screen\-Height}}
+\index{get\-Screen\-Height@{get\-Screen\-Height}!Game@{Game}}
+\subsubsection[{get\-Screen\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int Game\-::get\-Screen\-Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classGame_a8c7902edc8a3c705fd8bb36847e06b54}
+Returns screen height.\hypertarget{classGame_a2e00c62380b0d3940036e2edab06c2f2}{\index{Game@{Game}!get\-Screen\-Width@{get\-Screen\-Width}}
+\index{get\-Screen\-Width@{get\-Screen\-Width}!Game@{Game}}
+\subsubsection[{get\-Screen\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int Game\-::get\-Screen\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classGame_a2e00c62380b0d3940036e2edab06c2f2}
+Returns screen width.\hypertarget{classGame_ac5ca4ad10b022c71b07622898c0e17b8}{\index{Game@{Game}!load\-Chunk@{load\-Chunk}}
+\index{load\-Chunk@{load\-Chunk}!Game@{Game}}
+\subsubsection[{load\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}Mix\-\_\-\-Chunk $\ast$ Game\-::load\-Chunk (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classGame_ac5ca4ad10b022c71b07622898c0e17b8}
+load\-Chunk takes a filename to a sound effect and tries to open that media into the game.\hypertarget{classGame_a007a16399b4c563e1a41e1060a7e2db7}{\index{Game@{Game}!load\-Image@{load\-Image}}
+\index{load\-Image@{load\-Image}!Game@{Game}}
+\subsubsection[{load\-Image}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Surface $\ast$ Game\-::load\-Image (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classGame_a007a16399b4c563e1a41e1060a7e2db7}
+Creates a temporary surface then optimizes the loaded image and returns the new optimized surface
+
+Optimize the loaded image and colorkey the image Also make sure that we use displayformatalpha for images that has transparency needs like the menuarrow\hypertarget{classGame_a9713f011d2d0d3ef4a37aa07d7951947}{\index{Game@{Game}!load\-Level@{load\-Level}}
+\index{load\-Level@{load\-Level}!Game@{Game}}
+\subsubsection[{load\-Level}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::load\-Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGame_a9713f011d2d0d3ef4a37aa07d7951947}
+Load\-Level loads a new level, creates a timer and starts the timer.\hypertarget{classGame_a69c0505b09d39a511eb9c7d44a8cd46e}{\index{Game@{Game}!load\-Menu@{load\-Menu}}
+\index{load\-Menu@{load\-Menu}!Game@{Game}}
+\subsubsection[{load\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::load\-Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGame_a69c0505b09d39a511eb9c7d44a8cd46e}
+Load\-Menu creates the menu, starts menu music, handles start and exit states.\hypertarget{classGame_a3b0626d1e61c88b1630cd7fd1f9371a9}{\index{Game@{Game}!load\-Music@{load\-Music}}
+\index{load\-Music@{load\-Music}!Game@{Game}}
+\subsubsection[{load\-Music}]{\setlength{\rightskip}{0pt plus 5cm}Mix\-\_\-\-Music $\ast$ Game\-::load\-Music (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classGame_a3b0626d1e61c88b1630cd7fd1f9371a9}
+load\-Music takes a filename and tries to open that media into the game.\hypertarget{classGame_a4d0c0503733cc50b0b5cb8d7ef1237ec}{\index{Game@{Game}!operator=@{operator=}}
+\index{operator=@{operator=}!Game@{Game}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game}\& Game\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Game} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classGame_a4d0c0503733cc50b0b5cb8d7ef1237ec}
+\hypertarget{classGame_abe33184093d0ae79d40e5ac3521febbb}{\index{Game@{Game}!play\-Chunk@{play\-Chunk}}
+\index{play\-Chunk@{play\-Chunk}!Game@{Game}}
+\subsubsection[{play\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::play\-Chunk (
+\begin{DoxyParamCaption}
+\item[{Mix\-\_\-\-Chunk $\ast$}]{effect}
+\end{DoxyParamCaption}
+) const}}\label{classGame_abe33184093d0ae79d40e5ac3521febbb}
+plays a sound effect, returns a state variable that is less than 0 if something went wrong.\hypertarget{classGame_abac16174982079a0c46f0626ada16d54}{\index{Game@{Game}!play\-Music@{play\-Music}}
+\index{play\-Music@{play\-Music}!Game@{Game}}
+\subsubsection[{play\-Music}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::play\-Music (
+\begin{DoxyParamCaption}
+\item[{Mix\-\_\-\-Music $\ast$}]{song}
+\end{DoxyParamCaption}
+) const}}\label{classGame_abac16174982079a0c46f0626ada16d54}
+returns a state variable that is less than 0 if something went wrong.\hypertarget{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}{\index{Game@{Game}!run@{run}}
+\index{run@{run}!Game@{Game}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}
+This is the main function that runs the game we load the menu, then the level and as long as we dont exit or get gameover, we can continue playing.\hypertarget{classGame_a8d5df01e8f891aa5bb01153a66692dd6}{\index{Game@{Game}!run\-Level@{run\-Level}}
+\index{run\-Level@{run\-Level}!Game@{Game}}
+\subsubsection[{run\-Level}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::run\-Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGame_a8d5df01e8f891aa5bb01153a66692dd6}
+Run\-Level runs the level just loaded, gameplay begins in this function.\hypertarget{classGame_a19d3feebe0343f98e4ccd652adc9db4a}{\index{Game@{Game}!S\-D\-L\-\_\-\-E\-V\-E\-N\-T\-S@{S\-D\-L\-\_\-\-E\-V\-E\-N\-T\-S}}
+\index{S\-D\-L\-\_\-\-E\-V\-E\-N\-T\-S@{S\-D\-L\-\_\-\-E\-V\-E\-N\-T\-S}!Game@{Game}}
+\subsubsection[{S\-D\-L\-\_\-\-E\-V\-E\-N\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::\-S\-D\-L\-\_\-\-E\-V\-E\-N\-T\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGame_a19d3feebe0343f98e4ccd652adc9db4a}
+S\-D\-L\-\_\-\-E\-V\-E\-N\-T\-S handle polling of game events, such as exiting the game, lowering the game music volume / raising the volume. It is also nessecary in order for the keystates to properly work.\hypertarget{classGame_aed11a603c8dd060fc5de09e74669a0df}{\index{Game@{Game}!set\-Game\-State@{set\-Game\-State}}
+\index{set\-Game\-State@{set\-Game\-State}!Game@{Game}}
+\subsubsection[{set\-Game\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Game\-::set\-Game\-State (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-Game\-State}
+\end{DoxyParamCaption}
+)}}\label{classGame_aed11a603c8dd060fc5de09e74669a0df}
+Set\-Game\-State can take a new state and change the game's state to what the function recieved.
+
+\subsection{Member Data Documentation}
+\hypertarget{classGame_a52e8281c6c4ca4a6398e23f0a5d90cce}{\index{Game@{Game}!fps@{fps}}
+\index{fps@{fps}!Game@{Game}}
+\subsubsection[{fps}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timer}$\ast$ Game\-::fps \{nullptr\}}}\label{classGame_a52e8281c6c4ca4a6398e23f0a5d90cce}
+\hypertarget{classGame_afa62aac0abc3640293e298eec51b85d8}{\index{Game@{Game}!game\-Event@{game\-Event}}
+\index{game\-Event@{game\-Event}!Game@{Game}}
+\subsubsection[{game\-Event}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Event Game\-::game\-Event \{\}}}\label{classGame_afa62aac0abc3640293e298eec51b85d8}
+\hypertarget{classGame_a80f3380b4378e8969e230242c56a3361}{\index{Game@{Game}!level@{level}}
+\index{level@{level}!Game@{Game}}
+\subsubsection[{level}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Level}$\ast$ Game\-::level \{nullptr\}}}\label{classGame_a80f3380b4378e8969e230242c56a3361}
+\hypertarget{classGame_a239c35e9816b7571609c870d6070fb4b}{\index{Game@{Game}!random\-\_\-generator@{random\-\_\-generator}}
+\index{random\-\_\-generator@{random\-\_\-generator}!Game@{Game}}
+\subsubsection[{random\-\_\-generator}]{\setlength{\rightskip}{0pt plus 5cm}std\-::default\-\_\-random\-\_\-engine Game\-::random\-\_\-generator \{seed\}}}\label{classGame_a239c35e9816b7571609c870d6070fb4b}
+\hypertarget{classGame_acc0f346d45bb53307b52acc9cc65912d}{\index{Game@{Game}!screen@{screen}}
+\index{screen@{screen}!Game@{Game}}
+\subsubsection[{screen}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Surface$\ast$ Game\-::screen \{nullptr\}}}\label{classGame_acc0f346d45bb53307b52acc9cc65912d}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{game_8h}{game.\-h}\item 
+\hyperlink{game_8cc}{game.\-cc}\end{DoxyCompactItemize}

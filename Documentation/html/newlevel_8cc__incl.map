@@ -1,0 +1,11 @@
+<map id="newlevel.cc" name="newlevel.cc">
+<area shape="rect" id="node3" href="$newlevel_8h.html" title="newlevel.h" alt="" coords="576,83,659,112"/>
+<area shape="rect" id="node5" href="$level_8h.html" title="level.h" alt="" coords="259,160,317,189"/>
+<area shape="rect" id="node7" href="$game_8h.html" title="game.h" alt="" coords="384,469,448,499"/>
+<area shape="rect" id="node31" href="$player_8h.html" title="player.h" alt="" coords="155,315,221,344"/>
+<area shape="rect" id="node39" href="$zombie_8h.html" title="zombie.h" alt="" coords="304,237,379,267"/>
+<area shape="rect" id="node45" href="$arrow_8h.html" title="arrow.h" alt="" coords="216,237,280,267"/>
+<area shape="rect" id="node48" href="$UI_8h.html" title="UI.h" alt="" coords="96,237,141,267"/>
+<area shape="rect" id="node33" href="$sprite_8h.html" title="sprite.h" alt="" coords="313,392,377,421"/>
+<area shape="rect" id="node36" href="$timer_8h.html" title="timer.h" alt="" coords="152,469,213,499"/>
+</map>

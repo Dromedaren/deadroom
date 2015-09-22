@@ -1,0 +1,170 @@
+\hypertarget{classPlayer}{\section{Player Class Reference}
+\label{classPlayer}\index{Player@{Player}}
+}
+
+
+{\ttfamily \#include $<$player.\-h$>$}
+
+
+
+Inheritance diagram for Player\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classPlayer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Player\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classPlayer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlayer_aa7539e1f537c97414963214a1dc1aa65}{Player} (\hyperlink{classGame}{Game} $\ast$game, \hyperlink{classLevel}{Level} $\ast$level, std\-::string playername)
+\item 
+\hyperlink{classPlayer_ae8015d1f08ba69d663cfdaea1a64d1a4}{Player} (const \hyperlink{classPlayer}{Player} \&)=delete
+\item 
+\hyperlink{classPlayer}{Player} \& \hyperlink{classPlayer_ab81d34e4adb4e329d26b1635d866462d}{operator=} (const \hyperlink{classPlayer}{Player} \&)=delete
+\item 
+\hyperlink{classPlayer_a749d2c00e1fe0f5c2746f7505a58c062}{$\sim$\-Player} ()
+\item 
+void \hyperlink{classPlayer_ae02ee46d8c20dd0697b975f935b09839}{move} ()
+\item 
+void \hyperlink{classPlayer_af97f9b32912f28fdcdad1785d515cd2d}{take\-Damage} (int damage)
+\item 
+void \hyperlink{classPlayer_a9df270c5655b433d057e3e0f8fafd9ae}{events} ()
+\item 
+int \hyperlink{classPlayer_abcb15d249bed9a4ab0ab86b52b0d747a}{get\-Health} ()
+\item 
+int \hyperlink{classPlayer_a8ce2d81f916ae4634459d7fccc232c23}{attack} ()
+\item 
+bool \hyperlink{classPlayer_a740c5163bb90b6b5824aed4817b0c2cc}{collision} ()
+\item 
+S\-D\-L\-\_\-\-Surface $\ast$ \hyperlink{classPlayer_a9a65f7260bffb2a72c68d8692f447a06}{get\-Arrow\-Sprite} () const 
+\item 
+std\-::list$<$ \hyperlink{classArrow}{Arrow} $\ast$ $>$ \& \hyperlink{classPlayer_a9282a44ce22f9192413326f26459a7e4}{get\-Arrows} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPlayer_aa7539e1f537c97414963214a1dc1aa65}{\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\-::\-Player (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{{\bf Level} $\ast$}]{level, }
+\item[{std\-::string}]{playername}
+\end{DoxyParamCaption}
+)}}\label{classPlayer_aa7539e1f537c97414963214a1dc1aa65}
+the player constructor loads the player sprite sheet, sets the size of the sprite, positions on the level, where in the sprite sheet the animation starts. It also sets the player health, damage and moving speed.\hypertarget{classPlayer_ae8015d1f08ba69d663cfdaea1a64d1a4}{\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\-::\-Player (
+\begin{DoxyParamCaption}
+\item[{const {\bf Player} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classPlayer_ae8015d1f08ba69d663cfdaea1a64d1a4}
+\hypertarget{classPlayer_a749d2c00e1fe0f5c2746f7505a58c062}{\index{Player@{Player}!$\sim$\-Player@{$\sim$\-Player}}
+\index{$\sim$\-Player@{$\sim$\-Player}!Player@{Player}}
+\subsubsection[{$\sim$\-Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\-::$\sim$\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPlayer_a749d2c00e1fe0f5c2746f7505a58c062}
+player is resposible for freeing its surfaces.
+
+\subsection{Member Function Documentation}
+\hypertarget{classPlayer_a8ce2d81f916ae4634459d7fccc232c23}{\index{Player@{Player}!attack@{attack}}
+\index{attack@{attack}!Player@{Player}}
+\subsubsection[{attack}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::attack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPlayer_a8ce2d81f916ae4634459d7fccc232c23}
+attack deals damage equal to the players damage onto an enemy.\hypertarget{classPlayer_a740c5163bb90b6b5824aed4817b0c2cc}{\index{Player@{Player}!collision@{collision}}
+\index{collision@{collision}!Player@{Player}}
+\subsubsection[{collision}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\-::collision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classPlayer_a740c5163bb90b6b5824aed4817b0c2cc}
+We check every zombie if we have collided with it, if we did we take damage and we also \char`\"{}bounce\char`\"{} back when we take damage, to show the player an effect of being attacked.
+
+This part is so that we can be attacked even if we are standing still, meaning that the zombies direction is the primary focus in order to calculate how we should interact
+
+Implements \hyperlink{classSprite_ae0c21af6a4fc7fb8e9daf72675a1ec50}{Sprite}.
+
+\hypertarget{classPlayer_a9df270c5655b433d057e3e0f8fafd9ae}{\index{Player@{Player}!events@{events}}
+\index{events@{events}!Player@{Player}}
+\subsubsection[{events}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::events (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classPlayer_a9df270c5655b433d057e3e0f8fafd9ae}
+this function handles our keypresses for moving, and also makes sure that we cant fire how many arrows we want, it limits our shooting speed to the allowed time interval.
+
+If we press space then we shoot an arrow
+
+if we have 0 hp, then we lost the game 
+
+Reimplemented from \hyperlink{classSprite_a82cd02f494fe948457a8feb5ecd93212}{Sprite}.
+
+\hypertarget{classPlayer_a9282a44ce22f9192413326f26459a7e4}{\index{Player@{Player}!get\-Arrows@{get\-Arrows}}
+\index{get\-Arrows@{get\-Arrows}!Player@{Player}}
+\subsubsection[{get\-Arrows}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$ {\bf Arrow} $\ast$ $>$ \& Player\-::get\-Arrows (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPlayer_a9282a44ce22f9192413326f26459a7e4}
+returns a list holding all of the arrows\hypertarget{classPlayer_a9a65f7260bffb2a72c68d8692f447a06}{\index{Player@{Player}!get\-Arrow\-Sprite@{get\-Arrow\-Sprite}}
+\index{get\-Arrow\-Sprite@{get\-Arrow\-Sprite}!Player@{Player}}
+\subsubsection[{get\-Arrow\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Surface $\ast$ Player\-::get\-Arrow\-Sprite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classPlayer_a9a65f7260bffb2a72c68d8692f447a06}
+returns the surface holding the arrow sprite sheet.\hypertarget{classPlayer_abcb15d249bed9a4ab0ab86b52b0d747a}{\index{Player@{Player}!get\-Health@{get\-Health}}
+\index{get\-Health@{get\-Health}!Player@{Player}}
+\subsubsection[{get\-Health}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::get\-Health (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPlayer_abcb15d249bed9a4ab0ab86b52b0d747a}
+returns the players health.\hypertarget{classPlayer_ae02ee46d8c20dd0697b975f935b09839}{\index{Player@{Player}!move@{move}}
+\index{move@{move}!Player@{Player}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classPlayer_ae02ee46d8c20dd0697b975f935b09839}
+We use a system of direction with facing as our main way of telling the character how it should move when we have pressed certain buttons
+
+Reimplemented from \hyperlink{classSprite_afcf196c3d93fd743fdcc6f84d128ece6}{Sprite}.
+
+\hypertarget{classPlayer_ab81d34e4adb4e329d26b1635d866462d}{\index{Player@{Player}!operator=@{operator=}}
+\index{operator=@{operator=}!Player@{Player}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player}\& Player\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Player} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classPlayer_ab81d34e4adb4e329d26b1635d866462d}
+\hypertarget{classPlayer_af97f9b32912f28fdcdad1785d515cd2d}{\index{Player@{Player}!take\-Damage@{take\-Damage}}
+\index{take\-Damage@{take\-Damage}!Player@{Player}}
+\subsubsection[{take\-Damage}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::take\-Damage (
+\begin{DoxyParamCaption}
+\item[{int}]{damage}
+\end{DoxyParamCaption}
+)}}\label{classPlayer_af97f9b32912f28fdcdad1785d515cd2d}
+if we get hit we take damage equal to the damage taken.
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{player_8h}{player.\-h}\item 
+\hyperlink{player_8cc}{player.\-cc}\end{DoxyCompactItemize}

@@ -1,0 +1,3 @@
+<map id="Ui" name="Ui">
+<area shape="rect" id="node2" href="$classSprite.html" title="{Sprite\n|# game\l# direction\l# spriteName\l# facing\l# spritePosition\l# spriteSheetRect\l# animations\l# spriteSheet\l# SPRITE_SIZE\l|+ ~Sprite()\l+ events()\l+ move()\l+ boundries_collision()\l+ collision()\l+ getFacingDirection()\l+ getSpritePosition()\l+ getSpriteSheetRect()\l+ getSprite()\l+ getSpriteSize()\l# Sprite()\l# Sprite()\l# operator=()\l}" alt="" coords="5,5,160,437"/>
+</map>

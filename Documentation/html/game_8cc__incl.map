@@ -1,0 +1,12 @@
+<map id="game.cc" name="game.cc">
+<area shape="rect" id="node3" href="$game_8h.html" title="game.h" alt="" coords="557,469,621,499"/>
+<area shape="rect" id="node27" href="$timer_8h.html" title="timer.h" alt="" coords="963,392,1024,421"/>
+<area shape="rect" id="node30" href="$menu_8h.html" title="menu.h" alt="" coords="579,160,643,189"/>
+<area shape="rect" id="node33" href="$level_8h.html" title="level.h" alt="" coords="749,160,808,189"/>
+<area shape="rect" id="node55" href="$newlevel_8h.html" title="newlevel.h" alt="" coords="737,83,820,112"/>
+<area shape="rect" id="node36" href="$player_8h.html" title="player.h" alt="" coords="821,315,888,344"/>
+<area shape="rect" id="node42" href="$zombie_8h.html" title="zombie.h" alt="" coords="673,237,748,267"/>
+<area shape="rect" id="node48" href="$arrow_8h.html" title="arrow.h" alt="" coords="823,237,887,267"/>
+<area shape="rect" id="node51" href="$UI_8h.html" title="UI.h" alt="" coords="911,237,956,267"/>
+<area shape="rect" id="node38" href="$sprite_8h.html" title="sprite.h" alt="" coords="673,392,737,421"/>
+</map>

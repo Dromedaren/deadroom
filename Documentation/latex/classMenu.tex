@@ -1,0 +1,157 @@
+\hypertarget{classMenu}{\section{Menu Class Reference}
+\label{classMenu}\index{Menu@{Menu}}
+}
+
+
+{\ttfamily \#include $<$menu.\-h$>$}
+
+
+
+Collaboration diagram for Menu\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classMenu__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMenu_a91ec4975ad2aced80cd524a179dd7af1}{Menu} (\hyperlink{classGame}{Game} $\ast$game)
+\item 
+\hyperlink{classMenu_a63ab2f09293dba94a040e7303c069f5e}{Menu} (const \hyperlink{classMenu}{Menu} \&)=delete
+\item 
+\hyperlink{classMenu}{Menu} \& \hyperlink{classMenu_a2d63d2845c50e44eaf960876374f436a}{operator=} (const \hyperlink{classMenu}{Menu} \&)=delete
+\item 
+\hyperlink{classMenu_a831387f51358cfb88cd018e1777bc980}{$\sim$\-Menu} ()
+\item 
+void \hyperlink{classMenu_ac608f2d42a24c44578f3817218a36767}{events} ()
+\item 
+void \hyperlink{classMenu_aa6ff784314cc009478562d9ab7a0af34}{print} ()
+\item 
+void \hyperlink{classMenu_a5072c4d7aca8f9071c9ee9025a7019f9}{quit} ()
+\item 
+void \hyperlink{classMenu_ae1ec62e738dda7faaaec850bd0b58ffe}{start} ()
+\item 
+Mix\-\_\-\-Music $\ast$ \hyperlink{classMenu_a85a656aa9531a1308b5251c8f9df4cf3}{get\-Menu\-Music} () const 
+\item 
+Mix\-\_\-\-Chunk $\ast$ \hyperlink{classMenu_a9df0489e11835af740aa631ded1f1c07}{get\-Menu\-Option\-Effect} () const 
+\item 
+Mix\-\_\-\-Chunk $\ast$ \hyperlink{classMenu_a83ed1717ee5a549941e842f3250ca546}{get\-Menu\-Accept\-Effect} () const 
+\item 
+const S\-D\-L\-\_\-\-Rect \& \hyperlink{classMenu_a736db9878b209cde78a9ecd55e1adf11}{get\-Menu\-Position} () const 
+\item 
+S\-D\-L\-\_\-\-Surface $\ast$ \hyperlink{classMenu_adf2daad60f2175d887d8592998261c9a}{get\-Menu\-Background} () const 
+\item 
+S\-D\-L\-\_\-\-Surface $\ast$ \hyperlink{classMenu_a2e4f4c37e121c7446db8bb5ee2a214bc}{get\-Menu\-Arrow} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMenu_a91ec4975ad2aced80cd524a179dd7af1}{\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\subsubsection[{Menu}]{\setlength{\rightskip}{0pt plus 5cm}Menu\-::\-Menu (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game}
+\end{DoxyParamCaption}
+)}}\label{classMenu_a91ec4975ad2aced80cd524a179dd7af1}
+the menu constructor loads all menu images, music and also sets the default option in the game menu.\hypertarget{classMenu_a63ab2f09293dba94a040e7303c069f5e}{\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\subsubsection[{Menu}]{\setlength{\rightskip}{0pt plus 5cm}Menu\-::\-Menu (
+\begin{DoxyParamCaption}
+\item[{const {\bf Menu} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classMenu_a63ab2f09293dba94a040e7303c069f5e}
+\hypertarget{classMenu_a831387f51358cfb88cd018e1777bc980}{\index{Menu@{Menu}!$\sim$\-Menu@{$\sim$\-Menu}}
+\index{$\sim$\-Menu@{$\sim$\-Menu}!Menu@{Menu}}
+\subsubsection[{$\sim$\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}Menu\-::$\sim$\-Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMenu_a831387f51358cfb88cd018e1777bc980}
+menu is responsible for freeing its surfaces and music.
+
+\subsection{Member Function Documentation}
+\hypertarget{classMenu_ac608f2d42a24c44578f3817218a36767}{\index{Menu@{Menu}!events@{events}}
+\index{events@{events}!Menu@{Menu}}
+\subsubsection[{events}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\-::events (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMenu_ac608f2d42a24c44578f3817218a36767}
+handles the menu events, such as moving up / down in the menu and choosing either start or exit.\hypertarget{classMenu_a83ed1717ee5a549941e842f3250ca546}{\index{Menu@{Menu}!get\-Menu\-Accept\-Effect@{get\-Menu\-Accept\-Effect}}
+\index{get\-Menu\-Accept\-Effect@{get\-Menu\-Accept\-Effect}!Menu@{Menu}}
+\subsubsection[{get\-Menu\-Accept\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}Mix\-\_\-\-Chunk $\ast$ Menu\-::get\-Menu\-Accept\-Effect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classMenu_a83ed1717ee5a549941e842f3250ca546}
+returns the sound effect when choosing a menu option.\hypertarget{classMenu_a2e4f4c37e121c7446db8bb5ee2a214bc}{\index{Menu@{Menu}!get\-Menu\-Arrow@{get\-Menu\-Arrow}}
+\index{get\-Menu\-Arrow@{get\-Menu\-Arrow}!Menu@{Menu}}
+\subsubsection[{get\-Menu\-Arrow}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Surface $\ast$ Menu\-::get\-Menu\-Arrow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classMenu_a2e4f4c37e121c7446db8bb5ee2a214bc}
+returns the surface of the menu arrow.\hypertarget{classMenu_adf2daad60f2175d887d8592998261c9a}{\index{Menu@{Menu}!get\-Menu\-Background@{get\-Menu\-Background}}
+\index{get\-Menu\-Background@{get\-Menu\-Background}!Menu@{Menu}}
+\subsubsection[{get\-Menu\-Background}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Surface $\ast$ Menu\-::get\-Menu\-Background (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classMenu_adf2daad60f2175d887d8592998261c9a}
+returns the surface of the menu background.\hypertarget{classMenu_a85a656aa9531a1308b5251c8f9df4cf3}{\index{Menu@{Menu}!get\-Menu\-Music@{get\-Menu\-Music}}
+\index{get\-Menu\-Music@{get\-Menu\-Music}!Menu@{Menu}}
+\subsubsection[{get\-Menu\-Music}]{\setlength{\rightskip}{0pt plus 5cm}Mix\-\_\-\-Music $\ast$ Menu\-::get\-Menu\-Music (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classMenu_a85a656aa9531a1308b5251c8f9df4cf3}
+returns the menu music.\hypertarget{classMenu_a9df0489e11835af740aa631ded1f1c07}{\index{Menu@{Menu}!get\-Menu\-Option\-Effect@{get\-Menu\-Option\-Effect}}
+\index{get\-Menu\-Option\-Effect@{get\-Menu\-Option\-Effect}!Menu@{Menu}}
+\subsubsection[{get\-Menu\-Option\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}Mix\-\_\-\-Chunk $\ast$ Menu\-::get\-Menu\-Option\-Effect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classMenu_a9df0489e11835af740aa631ded1f1c07}
+returns the sound effect when switching menu option.\hypertarget{classMenu_a736db9878b209cde78a9ecd55e1adf11}{\index{Menu@{Menu}!get\-Menu\-Position@{get\-Menu\-Position}}
+\index{get\-Menu\-Position@{get\-Menu\-Position}!Menu@{Menu}}
+\subsubsection[{get\-Menu\-Position}]{\setlength{\rightskip}{0pt plus 5cm}const S\-D\-L\-\_\-\-Rect \& Menu\-::get\-Menu\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classMenu_a736db9878b209cde78a9ecd55e1adf11}
+gets the current position in the menu (the menu arrow).\hypertarget{classMenu_a2d63d2845c50e44eaf960876374f436a}{\index{Menu@{Menu}!operator=@{operator=}}
+\index{operator=@{operator=}!Menu@{Menu}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Menu}\& Menu\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Menu} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classMenu_a2d63d2845c50e44eaf960876374f436a}
+\hypertarget{classMenu_aa6ff784314cc009478562d9ab7a0af34}{\index{Menu@{Menu}!print@{print}}
+\index{print@{print}!Menu@{Menu}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\-::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMenu_aa6ff784314cc009478562d9ab7a0af34}
+\hypertarget{classMenu_a5072c4d7aca8f9071c9ee9025a7019f9}{\index{Menu@{Menu}!quit@{quit}}
+\index{quit@{quit}!Menu@{Menu}}
+\subsubsection[{quit}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\-::quit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMenu_a5072c4d7aca8f9071c9ee9025a7019f9}
+updates the games state to its exit-\/state.\hypertarget{classMenu_ae1ec62e738dda7faaaec850bd0b58ffe}{\index{Menu@{Menu}!start@{start}}
+\index{start@{start}!Menu@{Menu}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\-::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMenu_ae1ec62e738dda7faaaec850bd0b58ffe}
+updates the games state to its play-\/state.
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{menu_8h}{menu.\-h}\item 
+\hyperlink{menu_8cc}{menu.\-cc}\end{DoxyCompactItemize}

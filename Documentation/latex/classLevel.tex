@@ -1,0 +1,204 @@
+\hypertarget{classLevel}{\section{Level Class Reference}
+\label{classLevel}\index{Level@{Level}}
+}
+
+
+{\ttfamily \#include $<$level.\-h$>$}
+
+
+
+Inheritance diagram for Level\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classLevel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Level\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classLevel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structLevel_1_1Difficulty}{Difficulty}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLevel_ae03636cc90bd5f178650bd366124cb1c}{Level} (const \hyperlink{classLevel}{Level} \&)=delete
+\item 
+\hyperlink{classLevel}{Level} \& \hyperlink{classLevel_acbd996c953d3e3436cafddbf476cdba0}{operator=} (const \hyperlink{classLevel}{Level} \&)=delete
+\item 
+virtual \hyperlink{classLevel_a249eac1e8f19ff44134efa5e986feaca}{$\sim$\-Level} ()
+\item 
+void \hyperlink{classLevel_aa1f4afede83296a5f90254a1b8c558f3}{blit} ()
+\item 
+void \hyperlink{classLevel_a099ff502ab97a3c8bcf8511690d734d8}{events} ()
+\item 
+void \hyperlink{classLevel_a62e412eaad753d2baa2f94239cb80e41}{update} ()
+\item 
+void \hyperlink{classLevel_a44653e86f4db052e42396b0d4e95cc0a}{collision\-\_\-detection} ()
+\item 
+int \hyperlink{classLevel_aaf2eebf04cd6fe9343df05d7bd758119}{get\-Volume} ()
+\item 
+S\-D\-L\-\_\-\-Surface $\ast$ \hyperlink{classLevel_aab6e60626fa71aa9db1161ade94ca442}{get\-Zombie\-Sprite} () const 
+\item 
+std\-::list$<$ \hyperlink{classZombie}{Zombie} $\ast$ $>$ \& \hyperlink{classLevel_a11472360cfb4e4c6984015d86b5f7a96}{get\-Zombies} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structLevel_1_1Difficulty}{Difficulty} \hyperlink{classLevel_a940e0830c532595cc4509be6f68f30b9}{difficultysettings}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classLevel_a1af089e10ff0fc446d57277d48709622}{levelcount} = 0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLevel_a0af6f93b99224d07a5eefb0c73df20b1}{Level} (\hyperlink{classGame}{Game} $\ast$game\-Pointer)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGame}{Game} $\ast$ \hyperlink{classLevel_acefd7bcf714862644a1c7f6ab0462fe4}{game}
+\item 
+\hyperlink{classPlayer}{Player} $\ast$ \hyperlink{classLevel_a76b010ccc524cef1ae0c3adc2a63d3b1}{player} \{nullptr\}
+\item 
+\hyperlink{classUi}{Ui} $\ast$ \hyperlink{classLevel_aefdedc06660278bcea9e0d06460af308}{ui} \{nullptr\}
+\item 
+S\-D\-L\-\_\-\-Surface $\ast$ \hyperlink{classLevel_af0f53f17e06a467013d4612c13bbdc68}{zombie\-Sprite\-Sheet} \{nullptr\}
+\item 
+std\-::list$<$ \hyperlink{classZombie}{Zombie} $\ast$ $>$ \hyperlink{classLevel_a507f4b9bc3a1b4acf67c8857a942f584}{zombies} \{\}
+\item 
+S\-D\-L\-\_\-\-Surface $\ast$ \hyperlink{classLevel_a0016c5498bfdf767cf58bd36d5b1e8c0}{level\-Background} \{nullptr\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classLevel_ae03636cc90bd5f178650bd366124cb1c}{\index{Level@{Level}!Level@{Level}}
+\index{Level@{Level}!Level@{Level}}
+\subsubsection[{Level}]{\setlength{\rightskip}{0pt plus 5cm}Level\-::\-Level (
+\begin{DoxyParamCaption}
+\item[{const {\bf Level} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classLevel_ae03636cc90bd5f178650bd366124cb1c}
+\hypertarget{classLevel_a249eac1e8f19ff44134efa5e986feaca}{\index{Level@{Level}!$\sim$\-Level@{$\sim$\-Level}}
+\index{$\sim$\-Level@{$\sim$\-Level}!Level@{Level}}
+\subsubsection[{$\sim$\-Level}]{\setlength{\rightskip}{0pt plus 5cm}Level\-::$\sim$\-Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classLevel_a249eac1e8f19ff44134efa5e986feaca}
+level is resposible for freeing its surfaces and music.\hypertarget{classLevel_a0af6f93b99224d07a5eefb0c73df20b1}{\index{Level@{Level}!Level@{Level}}
+\index{Level@{Level}!Level@{Level}}
+\subsubsection[{Level}]{\setlength{\rightskip}{0pt plus 5cm}Level\-::\-Level (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game\-Pointer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLevel_a0af6f93b99224d07a5eefb0c73df20b1}
+level constructor loads the game music, sets the initial volume and increases that static counter level count by one. It loads the zombie sprite sheet, and stores the game \char`\"{}engine\char`\"{} pointer internally.
+
+\subsection{Member Function Documentation}
+\hypertarget{classLevel_aa1f4afede83296a5f90254a1b8c558f3}{\index{Level@{Level}!blit@{blit}}
+\index{blit@{blit}!Level@{Level}}
+\subsubsection[{blit}]{\setlength{\rightskip}{0pt plus 5cm}void Level\-::blit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLevel_aa1f4afede83296a5f90254a1b8c558f3}
+blit will draw the level, arrows, zombies and the user interface.\hypertarget{classLevel_a44653e86f4db052e42396b0d4e95cc0a}{\index{Level@{Level}!collision\-\_\-detection@{collision\-\_\-detection}}
+\index{collision\-\_\-detection@{collision\-\_\-detection}!Level@{Level}}
+\subsubsection[{collision\-\_\-detection}]{\setlength{\rightskip}{0pt plus 5cm}void Level\-::collision\-\_\-detection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLevel_a44653e86f4db052e42396b0d4e95cc0a}
+every type of movable object has to stay inside the screen area so we call boundry collisions and each objects own collision detection functions to determine what action to take when objects collide with walls or other objects.
+
+Check the players arrows for any collisions with boundries or enemies\hypertarget{classLevel_a099ff502ab97a3c8bcf8511690d734d8}{\index{Level@{Level}!events@{events}}
+\index{events@{events}!Level@{Level}}
+\subsubsection[{events}]{\setlength{\rightskip}{0pt plus 5cm}void Level\-::events (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLevel_a099ff502ab97a3c8bcf8511690d734d8}
+events goes through every object in the level and checks each objects own events. it handles spawning of zombies, updating health, etc.
+
+Checks that we havn't reached max amout of zombies spawned and spawns a wave of zombies every x seconds\hypertarget{classLevel_aaf2eebf04cd6fe9343df05d7bd758119}{\index{Level@{Level}!get\-Volume@{get\-Volume}}
+\index{get\-Volume@{get\-Volume}!Level@{Level}}
+\subsubsection[{get\-Volume}]{\setlength{\rightskip}{0pt plus 5cm}int Level\-::get\-Volume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLevel_aaf2eebf04cd6fe9343df05d7bd758119}
+\hypertarget{classLevel_a11472360cfb4e4c6984015d86b5f7a96}{\index{Level@{Level}!get\-Zombies@{get\-Zombies}}
+\index{get\-Zombies@{get\-Zombies}!Level@{Level}}
+\subsubsection[{get\-Zombies}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$ {\bf Zombie} $\ast$ $>$ \& Level\-::get\-Zombies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLevel_a11472360cfb4e4c6984015d86b5f7a96}
+returns a list of zombies that exist in-\/game.\hypertarget{classLevel_aab6e60626fa71aa9db1161ade94ca442}{\index{Level@{Level}!get\-Zombie\-Sprite@{get\-Zombie\-Sprite}}
+\index{get\-Zombie\-Sprite@{get\-Zombie\-Sprite}!Level@{Level}}
+\subsubsection[{get\-Zombie\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Surface $\ast$ Level\-::get\-Zombie\-Sprite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classLevel_aab6e60626fa71aa9db1161ade94ca442}
+returns the zombie sprite\hypertarget{classLevel_acbd996c953d3e3436cafddbf476cdba0}{\index{Level@{Level}!operator=@{operator=}}
+\index{operator=@{operator=}!Level@{Level}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Level}\& Level\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Level} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classLevel_acbd996c953d3e3436cafddbf476cdba0}
+\hypertarget{classLevel_a62e412eaad753d2baa2f94239cb80e41}{\index{Level@{Level}!update@{update}}
+\index{update@{update}!Level@{Level}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Level\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLevel_a62e412eaad753d2baa2f94239cb80e41}
+update does the actual moving of all objects on screen it moves the player, arrows, zombies and everything else that is moving.
+
+\subsection{Member Data Documentation}
+\hypertarget{classLevel_a940e0830c532595cc4509be6f68f30b9}{\index{Level@{Level}!difficultysettings@{difficultysettings}}
+\index{difficultysettings@{difficultysettings}!Level@{Level}}
+\subsubsection[{difficultysettings}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Difficulty} Level\-::difficultysettings}}\label{classLevel_a940e0830c532595cc4509be6f68f30b9}
+\hypertarget{classLevel_acefd7bcf714862644a1c7f6ab0462fe4}{\index{Level@{Level}!game@{game}}
+\index{game@{game}!Level@{Level}}
+\subsubsection[{game}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game}$\ast$ Level\-::game\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLevel_acefd7bcf714862644a1c7f6ab0462fe4}
+\hypertarget{classLevel_a0016c5498bfdf767cf58bd36d5b1e8c0}{\index{Level@{Level}!level\-Background@{level\-Background}}
+\index{level\-Background@{level\-Background}!Level@{Level}}
+\subsubsection[{level\-Background}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Surface$\ast$ Level\-::level\-Background \{nullptr\}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLevel_a0016c5498bfdf767cf58bd36d5b1e8c0}
+\hypertarget{classLevel_a1af089e10ff0fc446d57277d48709622}{\index{Level@{Level}!levelcount@{levelcount}}
+\index{levelcount@{levelcount}!Level@{Level}}
+\subsubsection[{levelcount}]{\setlength{\rightskip}{0pt plus 5cm}int Level\-::levelcount = 0\hspace{0.3cm}{\ttfamily [static]}}}\label{classLevel_a1af089e10ff0fc446d57277d48709622}
+\hypertarget{classLevel_a76b010ccc524cef1ae0c3adc2a63d3b1}{\index{Level@{Level}!player@{player}}
+\index{player@{player}!Level@{Level}}
+\subsubsection[{player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player}$\ast$ Level\-::player \{nullptr\}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLevel_a76b010ccc524cef1ae0c3adc2a63d3b1}
+\hypertarget{classLevel_aefdedc06660278bcea9e0d06460af308}{\index{Level@{Level}!ui@{ui}}
+\index{ui@{ui}!Level@{Level}}
+\subsubsection[{ui}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ui}$\ast$ Level\-::ui \{nullptr\}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLevel_aefdedc06660278bcea9e0d06460af308}
+\hypertarget{classLevel_a507f4b9bc3a1b4acf67c8857a942f584}{\index{Level@{Level}!zombies@{zombies}}
+\index{zombies@{zombies}!Level@{Level}}
+\subsubsection[{zombies}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Zombie}$\ast$$>$ Level\-::zombies \{\}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLevel_a507f4b9bc3a1b4acf67c8857a942f584}
+\hypertarget{classLevel_af0f53f17e06a467013d4612c13bbdc68}{\index{Level@{Level}!zombie\-Sprite\-Sheet@{zombie\-Sprite\-Sheet}}
+\index{zombie\-Sprite\-Sheet@{zombie\-Sprite\-Sheet}!Level@{Level}}
+\subsubsection[{zombie\-Sprite\-Sheet}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Surface$\ast$ Level\-::zombie\-Sprite\-Sheet \{nullptr\}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classLevel_af0f53f17e06a467013d4612c13bbdc68}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{level_8h}{level.\-h}\item 
+\hyperlink{level_8cc}{level.\-cc}\end{DoxyCompactItemize}

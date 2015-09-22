@@ -1,0 +1,6 @@
+<map id="UI.h" name="UI.h">
+<area shape="rect" id="node5" href="$player_8h.html" title="player.h" alt="" coords="516,83,583,112"/>
+<area shape="rect" id="node7" href="$sprite_8h.html" title="sprite.h" alt="" coords="517,160,581,189"/>
+<area shape="rect" id="node32" href="$timer_8h.html" title="timer.h" alt="" coords="808,237,869,267"/>
+<area shape="rect" id="node9" href="$game_8h.html" title="game.h" alt="" coords="517,237,581,267"/>
+</map>

@@ -1,0 +1,156 @@
+\hypertarget{classZombie}{\section{Zombie Class Reference}
+\label{classZombie}\index{Zombie@{Zombie}}
+}
+
+
+{\ttfamily \#include $<$zombie.\-h$>$}
+
+
+
+Inheritance diagram for Zombie\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classZombie__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zombie\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classZombie__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZombie_a490b91b7f34c4e3d8a3d4b42e6ef018c}{Zombie} (\hyperlink{classGame}{Game} $\ast$game\-Pointer, \hyperlink{classLevel}{Level} $\ast$level, std\-::string zombiename, \hyperlink{classPlayer}{Player} $\ast$player)
+\item 
+\hyperlink{classZombie_a1551812e760c7623f3b015e948d3d711}{Zombie} (const \hyperlink{classZombie}{Zombie} \&)=delete
+\item 
+\hyperlink{classZombie}{Zombie} \& \hyperlink{classZombie_ac110303450e69fd7cf672ac6812cbffe}{operator=} (const \hyperlink{classZombie}{Zombie} \&)=delete
+\item 
+\hyperlink{classZombie_ae3405ba8c88578dfa9d05cdeae0bab9f}{$\sim$\-Zombie} ()=default
+\item 
+int \hyperlink{classZombie_a7043da61be95308e7a952adaae347b7e}{attack} ()
+\item 
+int \hyperlink{classZombie_a2cf90eec8daea5e1cda6e3cdff4b0147}{get\-Health} () const 
+\item 
+void \hyperlink{classZombie_adc60ee88311d12f8fe150f5917943d2b}{move} ()
+\item 
+void \hyperlink{classZombie_af9f6fdd900c769f17d0e2dccb0db33c3}{events} ()
+\item 
+void \hyperlink{classZombie_a2fde39f3efac6da9062cf29e20c71b84}{take\-Damage} (int damage)
+\item 
+void \hyperlink{classZombie_ad45b25d75c9a2875a6b7fb8a272d2191}{random\-Spawn} ()
+\item 
+bool \hyperlink{classZombie_a41b274a28ed94dddb23794e6f6cc81f1}{collision} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZombie_a490b91b7f34c4e3d8a3d4b42e6ef018c}{\index{Zombie@{Zombie}!Zombie@{Zombie}}
+\index{Zombie@{Zombie}!Zombie@{Zombie}}
+\subsubsection[{Zombie}]{\setlength{\rightskip}{0pt plus 5cm}Zombie\-::\-Zombie (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game\-Pointer, }
+\item[{{\bf Level} $\ast$}]{level, }
+\item[{std\-::string}]{zombiename, }
+\item[{{\bf Player} $\ast$}]{player}
+\end{DoxyParamCaption}
+)}}\label{classZombie_a490b91b7f34c4e3d8a3d4b42e6ef018c}
+the zombie constructor defaults the facing direction to down, sets the zombies health, damage and speed depending on which difficulty setting we are playing on. The constructor also randomizes the spawn location for the zombies and sets the initial animation frame in the sprite sheet.\hypertarget{classZombie_a1551812e760c7623f3b015e948d3d711}{\index{Zombie@{Zombie}!Zombie@{Zombie}}
+\index{Zombie@{Zombie}!Zombie@{Zombie}}
+\subsubsection[{Zombie}]{\setlength{\rightskip}{0pt plus 5cm}Zombie\-::\-Zombie (
+\begin{DoxyParamCaption}
+\item[{const {\bf Zombie} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classZombie_a1551812e760c7623f3b015e948d3d711}
+\hypertarget{classZombie_ae3405ba8c88578dfa9d05cdeae0bab9f}{\index{Zombie@{Zombie}!$\sim$\-Zombie@{$\sim$\-Zombie}}
+\index{$\sim$\-Zombie@{$\sim$\-Zombie}!Zombie@{Zombie}}
+\subsubsection[{$\sim$\-Zombie}]{\setlength{\rightskip}{0pt plus 5cm}Zombie\-::$\sim$\-Zombie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classZombie_ae3405ba8c88578dfa9d05cdeae0bab9f}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classZombie_a7043da61be95308e7a952adaae347b7e}{\index{Zombie@{Zombie}!attack@{attack}}
+\index{attack@{attack}!Zombie@{Zombie}}
+\subsubsection[{attack}]{\setlength{\rightskip}{0pt plus 5cm}int Zombie\-::attack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZombie_a7043da61be95308e7a952adaae347b7e}
+when the zombies collide with the player, we take damage equal to the zombies damage.\hypertarget{classZombie_a41b274a28ed94dddb23794e6f6cc81f1}{\index{Zombie@{Zombie}!collision@{collision}}
+\index{collision@{collision}!Zombie@{Zombie}}
+\subsubsection[{collision}]{\setlength{\rightskip}{0pt plus 5cm}bool Zombie\-::collision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZombie_a41b274a28ed94dddb23794e6f6cc81f1}
+We check every zombie if they collide with each other 
+
+Implements \hyperlink{classSprite_ae0c21af6a4fc7fb8e9daf72675a1ec50}{Sprite}.
+
+\hypertarget{classZombie_af9f6fdd900c769f17d0e2dccb0db33c3}{\index{Zombie@{Zombie}!events@{events}}
+\index{events@{events}!Zombie@{Zombie}}
+\subsubsection[{events}]{\setlength{\rightskip}{0pt plus 5cm}void Zombie\-::events (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZombie_af9f6fdd900c769f17d0e2dccb0db33c3}
+the zombie has its own system of movement but uses the same system for facing, and animations
+
+Reimplemented from \hyperlink{classSprite_a82cd02f494fe948457a8feb5ecd93212}{Sprite}.
+
+\hypertarget{classZombie_a2cf90eec8daea5e1cda6e3cdff4b0147}{\index{Zombie@{Zombie}!get\-Health@{get\-Health}}
+\index{get\-Health@{get\-Health}!Zombie@{Zombie}}
+\subsubsection[{get\-Health}]{\setlength{\rightskip}{0pt plus 5cm}int Zombie\-::get\-Health (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classZombie_a2cf90eec8daea5e1cda6e3cdff4b0147}
+return the health of a zombie.\hypertarget{classZombie_adc60ee88311d12f8fe150f5917943d2b}{\index{Zombie@{Zombie}!move@{move}}
+\index{move@{move}!Zombie@{Zombie}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Zombie\-::move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classZombie_adc60ee88311d12f8fe150f5917943d2b}
+the move function is based on the players movement so we can get some sense of artificial intelligence. However this function just finds the player in the x-\/axis and then walks towards the player in the y-\/axis, creating the effect of the zombies walking toward the player.
+
+Reimplemented from \hyperlink{classSprite_afcf196c3d93fd743fdcc6f84d128ece6}{Sprite}.
+
+\hypertarget{classZombie_ac110303450e69fd7cf672ac6812cbffe}{\index{Zombie@{Zombie}!operator=@{operator=}}
+\index{operator=@{operator=}!Zombie@{Zombie}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Zombie}\& Zombie\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Zombie} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}}\label{classZombie_ac110303450e69fd7cf672ac6812cbffe}
+\hypertarget{classZombie_ad45b25d75c9a2875a6b7fb8a272d2191}{\index{Zombie@{Zombie}!random\-Spawn@{random\-Spawn}}
+\index{random\-Spawn@{random\-Spawn}!Zombie@{Zombie}}
+\subsubsection[{random\-Spawn}]{\setlength{\rightskip}{0pt plus 5cm}void Zombie\-::random\-Spawn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZombie_ad45b25d75c9a2875a6b7fb8a272d2191}
+we have 4 different openings in the level that we can use to randomly select where we want to spawn the zombies. we use a random generator to choose a number between 1-\/4 , that number corresponds to coordinates on the level.\hypertarget{classZombie_a2fde39f3efac6da9062cf29e20c71b84}{\index{Zombie@{Zombie}!take\-Damage@{take\-Damage}}
+\index{take\-Damage@{take\-Damage}!Zombie@{Zombie}}
+\subsubsection[{take\-Damage}]{\setlength{\rightskip}{0pt plus 5cm}void Zombie\-::take\-Damage (
+\begin{DoxyParamCaption}
+\item[{int}]{damage}
+\end{DoxyParamCaption}
+)}}\label{classZombie_a2fde39f3efac6da9062cf29e20c71b84}
+the zombie takes damage equal to the damage given.
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{zombie_8h}{zombie.\-h}\item 
+\hyperlink{zombie_8cc}{zombie.\-cc}\end{DoxyCompactItemize}
